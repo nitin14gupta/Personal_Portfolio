@@ -9,8 +9,12 @@
     /* Dark Blue */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -345,7 +349,11 @@ nav {
 .service:hover {
     transform: translateY(-10px);
     background-color: var(--secondary-color);
-    color: var(--background-color);
+    color: #007bff;
+}
+
+.service:hover i{
+    color: #007bff;
 }
 
 
@@ -355,6 +363,59 @@ nav {
     }
 }
 
+
+/*============================== Skills Section start ========================================= */
+
+
+.skills-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+}
+.skills-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill {
+     
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 15px;
+        width: 220px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.skill:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.skill i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+.skill h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007bff;
+}
+.skill p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+}
 /* ==================== Project Section ================= */
 
 
