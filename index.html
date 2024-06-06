@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>Portfolio Website - Nitin Gupta</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nitin Personal Portfolio</title>
 </head>
-
 <body>
-    <nav class="sticky">
-        <div class="logo">
-            Nitin G.
-        </div>
-        <ul class="nav-links">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Services</a></li>
-            <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav> 
-    <hr class="sticky">
+  <nav class="sticky">
+    <div class="logo">
+        Nitin G.
+    </div>
+    <ul class="nav-links">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+        <li class="nav__item"><a href="#skill" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+ 
+    <hr>
     <!-- HEro Section Start -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-text">
             <p class="hero_para">Hey, I am Nitin</p>
             <h1 style="text-align: start;">I am a <span class="highlight">Frontend Developer </span> and have great efficiency.</h1>
             <p>Short text with details about you, what you do or your professional career. You can add more information on the about page.</p>
             <div class="buttons">
-                <a href="https://github.com/nitin14gupta" class="btn" target="_blank">Projects</a>
+                <a href="#work" class="btn" style="cursor: pointer;">Projects</a>
                 <a href="https://www.linkedin.com/in/nitinCMgupta" class="btn" target="_blank">LinkedIn</a>
             </div>
         </div>
@@ -46,20 +44,21 @@
     <!-- ==========About Me Section =================== -->
 
 
-    <section class="about-section">
-        <div class="about-content">
-            <h2>About me</h2>
-            <p>I am a professional Frontend Developer with expertise in JavaScript and React. I have successfully built projects like news websites for clients in the past. Additionally, I have skills in logo design, web design, and more. I am dedicated to delivering high-quality work and ensuring client satisfaction with every project.</p>
-            <a id="resume-button" href="images/Frontend Developer.pdf" download="Nitin_Resume.pdf">Resume<i class="fa-solid fa-download"></i></a>
-        </div>
-        <div class="about-image">
-            <img src="./images/aboutImage.png" alt="About Profile Image">
-        </div>
-    </section>
+    <section id="about" class="about-section">
+      <div class="about-content">
+          <h2>About me</h2>
+          <p>I am a professional Frontend Developer with expertise in JavaScript and React. I have successfully built projects like news websites for clients in the past. Additionally, I have skills in logo design, web design, and more. I am dedicated to delivering high-quality work and ensuring client satisfaction with every project.</p>
+          <a id="resume-button" href="images/Frontend Developer.pdf" download="Nitin_Resume.pdf">Resume<i class="fa-solid fa-download"></i></a>
+      </div>
+      <div class="about-image">
+          <img src="./images/aboutImage.png" alt="About Profile Image">
+      </div>
+  </section>
+  
 <hr>
     <!-- ========================== Services Section ============================== -->
 
-    <section class="services-section">
+    <section class="services-section" id="services">
         <h2>My Services</h2>
         <div class="services-container">
             <div class="service">
@@ -85,9 +84,24 @@
         </div>
     </section>
 <hr>
+<!-- ================= Skills Section -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
     <!-- ============== Project Section -->
-    <section class="projects-section">
+    <section  id="work" class="projects-section">
         <h2>My Projects</h2>
         <div class="projects-container">
             <div class="project">
@@ -126,7 +140,7 @@
 <hr>
 
     <!-- ============= Contact US =================== -->
-    <section class="container_3">
+    <section id="contact" class="container_3">
         <h2>Get In Touch</h2>
         <p>Contact me</p>
         <p>Do you Have something to ask free, fell free to message.</p>
@@ -175,7 +189,7 @@
       <footer>
         <div class="footer-container">
           <div class="footer-row">
-            <img src="./images/logo.png" alt="Company Logo" class="company-logo">
+            <img src="images/logo.png" alt="Company Logo" class="company-logo">
             <section>
               <ul>
                 <li><a href="#">Home</a></li>
@@ -207,13 +221,8 @@
           </div>
         </div>
       </footer>
-              <script src="https://kit.fontawesome.com/72e3dd6a7a.js" crossorigin="anonymous"></script>
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="index.js"></script>
+      
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="portfolio.js"></script>
 </body>
-
 </html>
