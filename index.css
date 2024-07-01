@@ -327,6 +327,8 @@ nav {
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .service i {
